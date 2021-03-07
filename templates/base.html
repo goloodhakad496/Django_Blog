@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+
+<body>
+
+    {% include "header.html" %}
+
+    {% block home %}
+    {% endblock home %}
+    {% block blogpost %}
+    {% endblock blogpost %}
+    {% block recentBlog %}
+    {% endblock recentBlog %}
+    {% block about %}
+    {% endblock about %}
+    {% block contactUs %}
+    {% endblock contactUs %}
+    {% include "footer.html" %}
+    <!--Required scripts -->
+    {% include "scripts.html" %}
+</body>
+
+
+</html>
